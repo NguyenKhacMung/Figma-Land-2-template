@@ -1,0 +1,12 @@
+include mixin.pug
+section.Pricing#Pricing
+    .container 
+        h1.header-title Pricing
+        h2.subtitle 
+            |Most calendars are designed for teams. 
+            br
+            |Slate is designed for freelancers
+        .Pricing-list 
+            +itemPricing("0", "FREE")
+            +itemPricing("10", "STANDARD")
+            +itemPricing("99", "BUSINESS")

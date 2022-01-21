@@ -1,0 +1,24 @@
+.Partners {
+    padding: 130px 0 80px;
+    .header-title {
+        margin-bottom: 20px;
+    }
+    .subtitle {
+        margin-bottom: 80px;
+    }
+    .Social {
+        max-width: 1105px;
+        margin-bottom: 80px;
+    }
+    @media (max-width: 565px) {
+        padding: 60px 0;
+        .Social {
+            img {
+                width: 273px;
+                height: 150px;
+                object-fit: cover;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

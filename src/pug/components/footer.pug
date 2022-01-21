@@ -1,0 +1,26 @@
+include mixin.pug
+footer.footer
+	.container.footer-container
+		.footer-list 
+			+footer("Pages","Home","Product","Pricing","About","Contact")
+			+footer("Tomothy ","Eleanor Edwards","Ted Robertson","Annette Russell","Jennie Mckinney","Gloria Richards")
+			+footer("Jane Black","Philip Jones","Product","Colleen Russell","Marvin Hawkins","Bruce Simmmons")
+		.footer-contact
+			.contact-link
+				a(href="").location
+					i.fas.fa-map-marker-alt
+					|7480 Mockingbird Hill undefined 
+			.contact-link
+				a(href="").mobile
+					i.fas.fa-mobile-alt
+					|(239) 555-0108
+			ul.social  
+				li.link-item 
+					a(href="") 
+						i.fab.fa-twitter
+				li.link-item 
+					a(href="")
+						i.fab.fa-facebook-square
+				li.link-item 
+					a(href="") 
+						i.fab.fa-linkedin

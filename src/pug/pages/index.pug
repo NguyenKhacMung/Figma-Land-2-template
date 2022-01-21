@@ -1,0 +1,18 @@
+extends ../layouts/default
+
+block pageTitle
+	title Home
+
+block navbar
+	- let activePage = "Landing";
+	include ../components/header
+
+block content
+
+	include ../components/Features
+	include ../components/Fastest
+	include ../components/Lightning
+	include ../components/Partners
+	include ../components/Testimonials
+	include ../components/Pricing
+	include ../components/Contact

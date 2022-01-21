@@ -1,0 +1,36 @@
+mixin itemFeatures(img, title, subtitle)
+    .Features-item
+        img.icon(src=img, alt="")       
+        h3.title-item=title 
+        p=subtitle 
+
+mixin itemPricing(price, type)
+    .Pricing-item
+        h3.type=type      
+        p.desc Organize across all apps by hand
+        div.count
+            p.price=price       
+            .text
+                span $
+                p Per Month
+        p.Feature Pricing Feature
+        p.Feature Pricing Feature
+        p.Feature Pricing Feature
+        p.Feature Pricing Feature
+        p.Feature Pricing Feature
+        a(href="").btn.btn-primary Order Now
+
+mixin footer(title, link1, link2, link2, link4, link5)
+    .footer-list-item
+        h3.title=title 
+        ul.link 
+            li.link-item 
+                a(href="")=link1 
+            li.link-item 
+                a(href="")=link2
+            li.link-item 
+                a(href="")=link3 
+            li.link-item 
+                a(href="")=link4
+            li.link-item 
+                a(href="")=link4      

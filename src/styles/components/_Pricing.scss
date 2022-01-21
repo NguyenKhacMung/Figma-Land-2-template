@@ -1,0 +1,120 @@
+.Pricing {
+    background: #252B42;
+    padding: 100px 0;
+    .header-title {
+        margin-bottom: 20px;
+        color: #FFFFFF;
+    }
+    .subtitle {
+        margin-bottom: 80px;
+        color: #FFFFFF;
+    }
+    &-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px;
+        max-width: 1105px;
+        margin: 0 auto;
+    }
+    &-item {
+        max-width: 335px;
+        padding: 40px;
+        background: #FFFFFF;
+        border: 1px solid #DEDEDE;
+        box-sizing: border-box;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+        .type {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0.1px;
+            text-transform: uppercase;
+        }
+        .desc {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 23px;
+            text-align: center;
+            letter-spacing: 0.1px;
+            color: #374754;
+            margin-bottom: 20px;
+        }
+        .count {
+            p {
+                margin: 0;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            gap: 10px;
+            margin-bottom: 40px;
+            .price {
+                font-weight: bold;
+                font-size: 74px;
+                line-height: 84px;
+                letter-spacing: 0.2px;
+                color: #252B42;
+            }
+            span {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0.1px;
+                color: #252B42;
+            }
+        }
+        p {
+            margin-bottom: 30px;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 28px;
+            letter-spacing: 0.2px;
+            color: #252B42;
+        }
+        .btn-primary {
+            display: block;
+        }
+        @media (hover: hover) {
+            &:hover {
+                background: #2091F9;
+                transform: scaley(110%);
+                // padding: 83px 40px;
+                transition: all .2s linear;
+                .btn-primary {
+                    background: white;
+                    color: #2091F9;
+                    &:hover {
+                        background-color: turquoise;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1024px) {
+        &-list {
+            display: flex;
+            white-space: nowrap;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            &::-webkit-scrollbar {
+                opacity: 0;
+                width: 0;
+                display: none;
+                background-color: transparent;
+            }
+        }
+        &-item {
+            scroll-snap-align: start;
+        }
+    }
+    @media (max-width: 768px) {
+        &-list {
+            grid-gap: 25px;
+        }
+    }
+}

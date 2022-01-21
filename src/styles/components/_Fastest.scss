@@ -1,0 +1,32 @@
+.Fastest {
+    &-item {
+        max-width: 1245px;
+        margin: 290px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        .content {
+            text-align: left;
+            .header-title {
+                margin-top: 0;
+                margin-bottom: 30px;
+            }
+            .subtitle {
+                margin-bottom: 70px;
+            }
+        }
+        img {
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            flex-direction: column;
+            .content {
+                text-align: center;
+            }
+        }
+        @media (max-width: 565px) {
+            margin: 100px auto;
+        }
+    }
+}

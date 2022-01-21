@@ -1,0 +1,39 @@
+section.contact#contact
+	.container 
+		h1.header-title Contact Us
+		h2.subtitle 
+			|Most calendars are designed for teams. 
+			br
+			|Slate is designed for freelancers
+		.container.contact-container
+			form(action="").contact-form 
+				h3.title Contact Us
+				input.name(type="text" placeholder="Your Name" required)
+				input#mail.email(type="email", name="", placeholder="Your Email", required)
+				textarea#textarea( cols="30", rows="7", placeholder="Your Message", required)
+				button.btn.btn-primary Send
+			.contact-info
+				.localtion 
+					.localtion-item
+						.icon
+							i.fas.fa-map-marker-alt
+						p 6386 Spring St undefined Anchorage, Georgia 12473 United States
+					.localtion-item
+						.icon 
+							i.fas.fa-mobile-alt
+						p (843) 555-0130
+					.localtion-item
+						.icon
+							i.fas.fa-envelope
+						p willie.jennings@example.com
+				img.map(src="./assets/images/mpa.png", alt="")
+				ul.social  
+					li.link-item 
+						a(href="") 
+							i.fab.fa-twitter
+					li.link-item 
+						a(href="")
+							i.fab.fa-facebook-square
+					li.link-item 
+						a(href="") 
+							i.fab.fa-linkedin

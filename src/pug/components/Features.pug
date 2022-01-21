@@ -1,0 +1,21 @@
+include mixin.pug
+section.Features#Features
+    .container 
+        h1.header-title Features
+        h2.subtitle 
+            |Most calendars are designed for teams.
+            br
+            |Slate is designed for freelancers
+        .video.video-mobile 
+            img(src="./assets/images/videomb.png", alt="")
+            .btnAudio
+                i.fas.fa-play
+        .container.Features-list 
+            +itemFeatures("./assets/images/f1.png","OpenType features Variable fonts","Slate helps you see how many more days you need to work to reach your financial goal.")
+            +itemFeatures("./assets/images/f2.png","Design with real data","Slate helps you see how many more days you need to work to reach your financial goal.")
+            +itemFeatures("./assets/images/f3.png","Fastest way to take action","Slate helps you see how many more days you need to work to reach your financial goal.")
+        .video.video-web 
+            img(src="./assets/images/video.png", alt="")
+            .btnAudio
+                i.fas.fa-play
+ 
