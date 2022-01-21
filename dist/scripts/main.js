@@ -9,6 +9,7 @@ btntoogle && btntoogle.addEventListener("click", showNav);
 
 function showNav() {
     menu && menu.classList.add("show");
+    document.body.style.overflowY = "hidden";
 }
 
 
@@ -21,6 +22,7 @@ document.addEventListener('click', function(event) {
 
 function closeNav() {
     menu && menu.classList.remove("show");
+    document.body.style.overflowY = "auto";
 }
 // var links = document.querySelectorAll(".navbar ul a");
 
